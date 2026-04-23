@@ -70,12 +70,3 @@ pytest -v
 ```
 
 All tests are in `test_solution.py`. They will fail until you implement `reconcile`.
-
-## Evaluation
-
-- Correctness across all 8 tests.
-- Uses an index (hash map) for the exact-match pass — not nested loops.
-- Correctly enforces 1:1 matching.
-- Exact match is preferred over near match when the same bank transaction could serve either.
-- Handles empty inputs and timestamp parsing cleanly.
-- Readable, idiomatic Python. Type hints encouraged.

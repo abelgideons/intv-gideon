@@ -67,14 +67,6 @@ Order by `clinic_name`, `month`.
 | Senopati Smile    | 2026-02-01 | 2                      | 2               | 2                   | 0                  | 0.00               | 1200000.00    |
 | Senopati Smile    | 2026-03-01 | 1                      | 1               | 0                   | 1                  | 100.00             | 650000.00     |
 
-## Key Things to Note
-
-- Exclude `no_show` and `cancelled` **before** any aggregation.
-- Collapse same-day duplicates per (patient, clinic, date) — `ROW_NUMBER() OVER (PARTITION BY patient_id, clinic_id, appointment_date ORDER BY total_amount DESC NULLS LAST)` and keep row 1.
-- "First-time at this clinic" is **per-clinic**, not global. Use `MIN(appointment_date) OVER (PARTITION BY patient_id, clinic_id)` on the deduped completed visits.
-- Use `COALESCE(total_amount, 0)` for revenue.
-- Guard `retention_rate_pct` against divide-by-zero.
-
 ## How to Run
 
 We've targeted **PostgreSQL 15+** syntax but any major dialect with window functions works. To run locally:

@@ -61,16 +61,6 @@ Expected output at the end:
 [pipeline] summary: matched=X near_matched=Y exceptions=Z total_matched_amount=...
 ```
 
-## What We're Evaluating
-
-- **Prompt quality** — Are your prompts specific, or vague "fix this"? Do you break down the problem?
-- **Architectural judgment** — Do you accept AI output blindly, or push back when it's wrong?
-- **dbt instincts** — Do you use `ref()` where appropriate? Add tests? Mark models incremental when it makes sense?
-- **Reconciliation correctness** — Exact match first, then fuzzy? 1:1 enforcement? Handles empty inputs?
-- **DAG quality** — Idempotent? Logging? Failure handling via the retry decorator?
-- **Verification** — Do you actually run the pipeline before claiming "done"? Do you read generated SQL?
-- **Honesty** — Can you explain every line, including the lines the AI wrote?
-
 ## Tips
 
 - Start small. Get `extract` + `load` working first before touching `transform`.
