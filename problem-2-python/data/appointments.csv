@@ -1,0 +1,16 @@
+appointment_id,patient_id,clinic_name,appointment_date,status,total_amount
+1,101,Kemang Dental,2026-04-01,completed,500000
+2,102,Kemang Dental,2026-04-01,COMPLETED,"450,000.00"
+3,103,Kemang Dental,2026-04-01,no_show,
+4,104,PIK Dental Center,2026-04-01,completed,750000
+5,105,PIK Dental Center,2026-04-01,cancelled,
+1,101,Kemang Dental,2026-04-01,completed,500000
+6,106,Kemang Dental,2026-04-02,Completed,600000
+7,107,Kemang Dental,2026-04-02,NO_SHOW,
+8,108,PIK Dental Center,2026-04-02,completed,"1,200,000"
+9,109,Senopati Smile,2026-04-02,completed,350000
+10,110,Senopati Smile,2026-04-02,Cancelled,
+11,111,Senopati Smile,2026-04-03,completed,"2,500,000.00"
+12,112,Senopati Smile,2026-04-03,completed,
+13,113,Kemang Dental,2026-04-03,completed,800000
+14,114,Kemang Dental,2026-04-03,no_show,

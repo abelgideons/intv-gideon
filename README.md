@@ -21,7 +21,7 @@ SATU Dental is a dental clinic SaaS. Backend in Go (chi, GORM), frontend in Next
 .
 ├── README.md                  <- you are here
 ├── problem-1-sql/             <- Problem 1: SQL patient retention analysis
-├── problem-2-python/          <- Problem 2: EDC reconciliation engine (Python)
+├── problem-2-python/          <- Problem 2: Appointment data cleanup + daily summary (pandas)
 └── ai-challenge/              <- Alternative: AI-assisted reconciliation pipeline
 ```
 
