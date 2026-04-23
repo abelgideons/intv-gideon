@@ -42,6 +42,20 @@ Implement `summarize(input_path: str) -> pd.DataFrame` in `solution.py`.
 | status            | str (mixed case) |
 | total_amount      | str / number / NULL |
 
+## Expected Result
+
+Running `summarize("data/appointments.csv")` should return:
+
+| appointment_date | clinic_name       | completed_count | no_show_count | cancelled_count | total_revenue |
+|------------------|-------------------|-----------------|---------------|-----------------|---------------|
+| 2026-04-01       | Kemang Dental     | 2               | 1             | 0               | 950000.0      |
+| 2026-04-01       | PIK Dental Center | 1               | 0             | 1               | 750000.0      |
+| 2026-04-02       | Kemang Dental     | 1               | 1             | 0               | 600000.0      |
+| 2026-04-02       | PIK Dental Center | 1               | 0             | 0               | 1200000.0     |
+| 2026-04-02       | Senopati Smile    | 1               | 0             | 1               | 350000.0      |
+| 2026-04-03       | Kemang Dental     | 1               | 1             | 0               | 800000.0      |
+| 2026-04-03       | Senopati Smile    | 2               | 0             | 0               | 2500000.0     |
+
 ## How to Run
 
 ```bash
